@@ -20,7 +20,7 @@ export default function Create() {
 
      
       axios({
-        url: 'http://localhost:5000/students',
+        url: 'https://mern-server-api.herokuapp.com/students',
         method: 'POST',
         data: student,
         headers: {

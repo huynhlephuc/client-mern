@@ -25,7 +25,7 @@ export default function ShowStudent() {
 
 
   useEffect( ()=> {
-    axios.get('http://localhost:5000/students').then( (allStudent) => {
+    axios.get('https://mern-server-api.herokuapp.com/students').then( (allStudent) => {
       setStudentList(allStudent.data);
     })
     
@@ -33,7 +33,7 @@ export default function ShowStudent() {
   },[render]);
 
   function handlerDelete(id) {
-    axios.delete(`http://localhost:5000/students/${id}`)
+    axios.delete(`https://mern-server-api.herokuapp.com/students/${id}`)
     
   }
 
